@@ -1,0 +1,6 @@
+1001|Rahul Sharma|25000.00|1
+1002|Priya Singh|18000.00|1
+1003|Aman Kumar|5000.00|1
+1004|Neha Gupta|35000.00|1
+1005|Rohan Verma|0.00|0
+1006|Livesh|500.00|1

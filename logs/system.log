@@ -1,0 +1,38 @@
+[2026-10-06 10:00:01] [INFO] System initialized successfully. Kernel version: 5.15.0-x86_64
+[2026-10-06 10:00:05] [INFO] CPU = 24.5% | RAM = 42.1% | DISK = 55.0%
+[2026-10-06 10:00:15] [INFO] Service auth-gateway started on port 8080.
+[2026-10-06 10:00:22] [SUCCESS] Database connection pool established with 50 active connections.
+[2026-10-06 10:01:03] [INFO] CPU = 32.0% | RAM = 45.4% | DISK = 55.0%
+[2026-10-06 10:01:12] [SUCCESS] User admin LOGIN successful from IP 192.168.1.105
+[2026-10-06 10:01:45] [WARNING] High latency detected on downstream payment API. Response time: 820ms
+[2026-10-06 10:02:10] [INFO] CPU = 45.2% | RAM = 58.7% | DISK = 55.1%
+[2026-10-06 10:02:40] [WARNING] Worker thread pool utilization reached 78%
+[2026-10-06 10:03:15] [ERROR] FAILED to resolve DNS for host cache.internal.cluster
+[2026-10-06 10:03:30] [INFO] CPU = 58.6% | RAM = 64.2% | DISK = 55.2%
+[2026-10-06 10:04:02] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]
+[2026-10-06 10:04:12] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 2/5]
+[2026-10-06 10:04:25] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 3/5]
+[2026-10-06 10:04:39] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
+[2026-10-06 10:04:55] [ERROR] User guest LOGIN FAILED - invalid credentials [Attempt 5/5] - IP 203.0.113.44 blocked
+[2026-10-06 10:05:10] [INFO] CPU = 65.4% | RAM = 71.0% | DISK = 55.5%
+[2026-10-06 10:05:40] [WARNING] MEMORY usage threshold approaching limit: RAM = 76.5%
+[2026-10-06 10:06:05] [ERROR] TIMEOUT while waiting for transaction response id=tx_99812
+[2026-10-06 10:06:22] [ERROR] Database write lock contention: TIMEOUT on table orders
+[2026-10-06 10:07:01] [INFO] CPU = 72.8% | RAM = 81.3% | DISK = 56.0%
+[2026-10-06 10:07:33] [WARNING] MEMORY buffer cache miss rate elevated: 42%
+[2026-10-06 10:08:15] [INFO] CPU = 79.1% | RAM = 84.6% | DISK = 56.2%
+[2026-10-06 10:08:45] [WARNING] RAM = 86.2% exceeds warning threshold of 85%
+[2026-10-06 10:09:12] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 10:09:40] [INFO] CPU = 85.3% | RAM = 87.8% | DISK = 56.5%
+[2026-10-06 10:10:02] [CRITICAL] CPU = 94.6% spike detected! Thermal throttling initiated
+[2026-10-06 10:10:15] [CRITICAL] CPU = 98.2% core 0/1 pinned at 100% load
+[2026-10-06 10:10:30] [ERROR] Garbage collection cycle took 4500ms exceeding SLA
+[2026-10-06 10:11:00] [CRITICAL] MEMORY pressure high: RAM = 92.4% - kernel OOM-killer alert
+[2026-10-06 10:11:25] [ERROR] Connection refused on internal RPC gateway port 9092
+[2026-10-06 10:11:50] [CRITICAL] DISK I/O queue saturated: DISK = 93.8% bandwidth utilized
+[2026-10-06 10:12:10] [ERROR] FAILED to flush journal logs to disk: DISK write error sector 4096
+[2026-10-06 10:12:35] [WARNING] Failover controller triggered node health re-evaluation
+[2026-10-06 10:13:00] [INFO] CPU = 89.0% | RAM = 88.5% | DISK = 89.0%
+[2026-10-06 10:13:45] [SUCCESS] Backup worker processes recycled successfully
+[2026-10-06 10:14:10] [INFO] CPU = 68.2% | RAM = 74.0% | DISK = 72.1%
+[2026-10-06 10:14:50] [SUCCESS] System telemetry stabilized. Normal operational mode restored.

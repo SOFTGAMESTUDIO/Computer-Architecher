@@ -1,0 +1,2 @@
+2026-09-09 14:34:24|Account:1006|Type:CREATE_ACCOUNT|Amount:0.00|Balance:0.00|Status:SUCCESS
+2026-09-09 14:34:54|Account:1006|Type:DEPOSIT|Amount:500.00|Balance:500.00|Status:SUCCESS

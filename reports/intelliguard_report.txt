@@ -1,0 +1,76 @@
+
+========================================================================
+                    C-INTELLIGUARD SYSTEM REPORT                        
+========================================================================
+  Generated : 2026-10-06 18:24:55
+  File      : logs/system.log
+========================================================================
+
+  FILE INFORMATION
+  -----------------------------------------------------------------------
+  File Name        : system.log                              
+  Total Lines      : 38
+  Total Characters : 3156
+  Total Words      : 524
+  Longest Line     : 115 characters
+  Shortest Line    : 69 characters
+
+  LOG ANALYSIS
+  -----------------------------------------------------------------------
+  INFO               : 12
+  SUCCESS            : 4
+  WARNING            : 10
+  ERROR              : 8
+  CRITICAL           : 4
+  FAILED events      : 8
+  TIMEOUT events     : 2
+  LOGIN events       : 6
+  Login FAILURES     : 5
+
+  STATISTICS
+  -----------------------------------------------------------------------
+  CPU  | Mean:  67.74%  Median:  70.50%  StdDev:  22.93  Min: 24.50  Max: 98.20
+  RAM  | Mean:  71.05%  Median:  75.25%  StdDev:  17.19  Min: 42.00  Max: 92.40
+  DISK | Mean:  63.58%  Median:  56.00%  StdDev:  13.98  Min: 55.00  Max: 93.80
+
+  ANOMALY SUMMARY
+  -----------------------------------------------------------------------
+  CPU Critical Spikes (>90%)   : 2
+  CPU Warning Spikes  (>75%)   : 3
+  RAM Critical Spikes (>90%)   : 1
+  RAM Warning Spikes  (>85%)   : 3
+  DISK Critical Spikes(>90%)   : 1
+  Login Failures               : 5
+
+  RISK ANALYSIS
+  -----------------------------------------------------------------------
+  Risk Score    : 73 / 100
+  System Status : WARNING
+  Risk Meter    : [##################-------]
+
+  RECOMMENDATIONS
+  -----------------------------------------------------------------------
+   1. Investigate CPU spikes (2 critical readings > 90%)
+   2. Increase RAM capacity or reduce memory-intensive services
+   3. Check disk health — 1 critical DISK saturation events
+   4. Enable IP rate-limiting — 5 failed login attempts detected
+   5. Review network timeouts — 2 TIMEOUT events in log
+   6. Respond to 4 CRITICAL events — escalate to on-call team
+
+  TOP CRITICAL/ERROR EVENTS
+  -----------------------------------------------------------------------
+  [L10  ] [ERROR   ] FAILED to resolve DNS for host cache.internal.cluster
+  [L16  ] [ERROR   ] User guest LOGIN FAILED - invalid credentials [Attempt 5/5] - IP 203.0.113.44 blocked
+  [L19  ] [ERROR   ] TIMEOUT while waiting for transaction response id=tx_99812
+  [L20  ] [ERROR   ] Database write lock contention: TIMEOUT on table orders
+  [L25  ] [ERROR   ] FAILED background sync job: out of socket descriptors
+  [L27  ] [CRITICAL] CPU = 94.6% spike detected! Thermal throttling initiated
+  [L28  ] [CRITICAL] CPU = 98.2% core 0/1 pinned at 100% load
+  [L29  ] [ERROR   ] Garbage collection cycle took 4500ms exceeding SLA
+  [L30  ] [CRITICAL] MEMORY pressure high: RAM = 92.4% - kernel OOM-killer alert
+  [L31  ] [ERROR   ] Connection refused on internal RPC gateway port 9092
+
+========================================================================
+                          END OF REPORT                                 
+========================================================================
+
