@@ -1,38 +1,500 @@
-[2026-10-06 10:00:01] [INFO] System initialized successfully. Kernel version: 5.15.0-x86_64
-[2026-10-06 10:00:05] [INFO] CPU = 24.5% | RAM = 42.1% | DISK = 55.0%
-[2026-10-06 10:00:15] [INFO] Service auth-gateway started on port 8080.
-[2026-10-06 10:00:22] [SUCCESS] Database connection pool established with 50 active connections.
-[2026-10-06 10:01:03] [INFO] CPU = 32.0% | RAM = 45.4% | DISK = 55.0%
-[2026-10-06 10:01:12] [SUCCESS] User admin LOGIN successful from IP 192.168.1.105
-[2026-10-06 10:01:45] [WARNING] High latency detected on downstream payment API. Response time: 820ms
-[2026-10-06 10:02:10] [INFO] CPU = 45.2% | RAM = 58.7% | DISK = 55.1%
-[2026-10-06 10:02:40] [WARNING] Worker thread pool utilization reached 78%
-[2026-10-06 10:03:15] [ERROR] FAILED to resolve DNS for host cache.internal.cluster
-[2026-10-06 10:03:30] [INFO] CPU = 58.6% | RAM = 64.2% | DISK = 55.2%
-[2026-10-06 10:04:02] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]
-[2026-10-06 10:04:12] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 2/5]
-[2026-10-06 10:04:25] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 3/5]
-[2026-10-06 10:04:39] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
-[2026-10-06 10:04:55] [ERROR] User guest LOGIN FAILED - invalid credentials [Attempt 5/5] - IP 203.0.113.44 blocked
-[2026-10-06 10:05:10] [INFO] CPU = 65.4% | RAM = 71.0% | DISK = 55.5%
-[2026-10-06 10:05:40] [WARNING] MEMORY usage threshold approaching limit: RAM = 76.5%
-[2026-10-06 10:06:05] [ERROR] TIMEOUT while waiting for transaction response id=tx_99812
-[2026-10-06 10:06:22] [ERROR] Database write lock contention: TIMEOUT on table orders
-[2026-10-06 10:07:01] [INFO] CPU = 72.8% | RAM = 81.3% | DISK = 56.0%
-[2026-10-06 10:07:33] [WARNING] MEMORY buffer cache miss rate elevated: 42%
-[2026-10-06 10:08:15] [INFO] CPU = 79.1% | RAM = 84.6% | DISK = 56.2%
-[2026-10-06 10:08:45] [WARNING] RAM = 86.2% exceeds warning threshold of 85%
-[2026-10-06 10:09:12] [ERROR] FAILED background sync job: out of socket descriptors
-[2026-10-06 10:09:40] [INFO] CPU = 85.3% | RAM = 87.8% | DISK = 56.5%
-[2026-10-06 10:10:02] [CRITICAL] CPU = 94.6% spike detected! Thermal throttling initiated
-[2026-10-06 10:10:15] [CRITICAL] CPU = 98.2% core 0/1 pinned at 100% load
-[2026-10-06 10:10:30] [ERROR] Garbage collection cycle took 4500ms exceeding SLA
-[2026-10-06 10:11:00] [CRITICAL] MEMORY pressure high: RAM = 92.4% - kernel OOM-killer alert
-[2026-10-06 10:11:25] [ERROR] Connection refused on internal RPC gateway port 9092
-[2026-10-06 10:11:50] [CRITICAL] DISK I/O queue saturated: DISK = 93.8% bandwidth utilized
-[2026-10-06 10:12:10] [ERROR] FAILED to flush journal logs to disk: DISK write error sector 4096
-[2026-10-06 10:12:35] [WARNING] Failover controller triggered node health re-evaluation
-[2026-10-06 10:13:00] [INFO] CPU = 89.0% | RAM = 88.5% | DISK = 89.0%
-[2026-10-06 10:13:45] [SUCCESS] Backup worker processes recycled successfully
-[2026-10-06 10:14:10] [INFO] CPU = 68.2% | RAM = 74.0% | DISK = 72.1%
-[2026-10-06 10:14:50] [SUCCESS] System telemetry stabilized. Normal operational mode restored.
+[2026-10-06 08:00:05] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:00:06] [INFO] CPU = 30.4% | RAM = 59.1% | DISK = 68.4%
+[2026-10-06 08:00:07] [CRITICAL] CPU = 94.3% spike detected! Core thermal threshold reached
+[2026-10-06 08:00:08] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:00:11] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:00:16] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:00:18] [INFO] CPU = 43.1% | RAM = 43.9% | DISK = 54.0%
+[2026-10-06 08:00:23] [INFO] CPU = 20.0% | RAM = 53.9% | DISK = 63.7%
+[2026-10-06 08:00:25] [INFO] CPU = 35.4% | RAM = 57.1% | DISK = 60.5%
+[2026-10-06 08:00:27] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:00:30] [WARNING] Latency detected on service payment-api: response time 811 ms
+[2026-10-06 08:00:35] [WARNING] RAM = 85.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:00:37] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:00:40] [CRITICAL] DISK I/O queue saturated: DISK = 99.0% bandwidth utilized
+[2026-10-06 08:00:41] [CRITICAL] CPU = 97.1% spike detected! Core thermal threshold reached
+[2026-10-06 08:00:45] [INFO] CPU = 23.0% | RAM = 64.9% | DISK = 59.2%
+[2026-10-06 08:00:49] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:00:52] [ERROR] TIMEOUT while waiting for transaction response id=tx_32108
+[2026-10-06 08:00:54] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:00:58] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:01:00] [WARNING] Latency detected on service cache-cluster: response time 1249 ms
+[2026-10-06 08:01:03] [INFO] CPU = 45.8% | RAM = 40.6% | DISK = 55.3%
+[2026-10-06 08:01:06] [INFO] CPU = 20.0% | RAM = 70.3% | DISK = 54.3%
+[2026-10-06 08:01:07] [ERROR] TIMEOUT while waiting for transaction response id=tx_16288
+[2026-10-06 08:01:11] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 3/5]
+[2026-10-06 08:01:15] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:01:18] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:01:23] [ERROR] TIMEOUT while waiting for transaction response id=tx_22091
+[2026-10-06 08:01:28] [INFO] CPU = 62.0% | RAM = 50.2% | DISK = 55.2%
+[2026-10-06 08:01:33] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:01:37] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:01:38] [INFO] CPU = 27.4% | RAM = 70.4% | DISK = 58.0%
+[2026-10-06 08:01:40] [INFO] CPU = 58.7% | RAM = 48.5% | DISK = 55.2%
+[2026-10-06 08:01:43] [INFO] CPU = 55.7% | RAM = 74.5% | DISK = 51.3%
+[2026-10-06 08:01:48] [INFO] CPU = 36.9% | RAM = 41.2% | DISK = 56.1%
+[2026-10-06 08:01:50] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:01:52] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:01:57] [ERROR] FAILED to resolve DNS for host internal-auth-gateway.cluster
+[2026-10-06 08:01:59] [WARNING] RAM = 89.9% exceeds warning threshold of 85.0%
+[2026-10-06 08:02:01] [WARNING] RAM = 85.6% exceeds warning threshold of 85.0%
+[2026-10-06 08:02:03] [INFO] CPU = 36.3% | RAM = 46.1% | DISK = 71.8%
+[2026-10-06 08:02:08] [WARNING] Latency detected on service order-engine: response time 1081 ms
+[2026-10-06 08:02:10] [INFO] CPU = 63.9% | RAM = 41.3% | DISK = 72.7%
+[2026-10-06 08:02:15] [INFO] CPU = 40.5% | RAM = 49.8% | DISK = 61.2%
+[2026-10-06 08:02:18] [INFO] CPU = 23.7% | RAM = 54.4% | DISK = 53.1%
+[2026-10-06 08:02:22] [ERROR] TIMEOUT while waiting for transaction response id=tx_20336
+[2026-10-06 08:02:24] [WARNING] RAM = 90.9% exceeds warning threshold of 85.0%
+[2026-10-06 08:02:28] [INFO] CPU = 31.1% | RAM = 70.6% | DISK = 63.6%
+[2026-10-06 08:02:32] [INFO] CPU = 62.3% | RAM = 72.8% | DISK = 58.0%
+[2026-10-06 08:02:34] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:02:35] [ERROR] TIMEOUT while waiting for transaction response id=tx_12673
+[2026-10-06 08:02:36] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:02:39] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:02:41] [INFO] CPU = 52.7% | RAM = 67.7% | DISK = 52.1%
+[2026-10-06 08:02:43] [INFO] CPU = 45.8% | RAM = 58.9% | DISK = 59.5%
+[2026-10-06 08:02:46] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:02:48] [ERROR] TIMEOUT while waiting for transaction response id=tx_10287
+[2026-10-06 08:02:50] [INFO] CPU = 41.0% | RAM = 54.7% | DISK = 61.7%
+[2026-10-06 08:02:53] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:02:58] [INFO] CPU = 27.5% | RAM = 60.4% | DISK = 72.7%
+[2026-10-06 08:02:59] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:03:03] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:03:05] [ERROR] TIMEOUT while waiting for transaction response id=tx_17682
+[2026-10-06 08:03:07] [ERROR] TIMEOUT while waiting for transaction response id=tx_13204
+[2026-10-06 08:03:10] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:03:13] [INFO] CPU = 29.4% | RAM = 63.0% | DISK = 51.0%
+[2026-10-06 08:03:15] [WARNING] Latency detected on service order-engine: response time 1034 ms
+[2026-10-06 08:03:16] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.24
+[2026-10-06 08:03:17] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.59
+[2026-10-06 08:03:22] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:03:26] [INFO] CPU = 59.9% | RAM = 69.7% | DISK = 52.7%
+[2026-10-06 08:03:28] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:03:31] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:03:33] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:03:38] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.185
+[2026-10-06 08:03:40] [INFO] CPU = 55.1% | RAM = 50.5% | DISK = 52.0%
+[2026-10-06 08:03:45] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:03:46] [INFO] CPU = 47.2% | RAM = 42.4% | DISK = 60.9%
+[2026-10-06 08:03:49] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:03:53] [CRITICAL] DISK I/O queue saturated: DISK = 97.9% bandwidth utilized
+[2026-10-06 08:03:54] [INFO] CPU = 57.9% | RAM = 59.8% | DISK = 70.5%
+[2026-10-06 08:03:55] [CRITICAL] MEMORY pressure high: RAM = 94.8% - kernel OOM-killer alert
+[2026-10-06 08:03:58] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:04:02] [ERROR] FAILED to resolve DNS for host internal-order-engine.cluster
+[2026-10-06 08:04:05] [INFO] CPU = 37.8% | RAM = 72.5% | DISK = 53.4%
+[2026-10-06 08:04:10] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:04:11] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:04:12] [INFO] CPU = 27.5% | RAM = 51.4% | DISK = 50.8%
+[2026-10-06 08:04:14] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:04:18] [CRITICAL] DISK I/O queue saturated: DISK = 96.0% bandwidth utilized
+[2026-10-06 08:04:21] [INFO] CPU = 39.9% | RAM = 66.9% | DISK = 63.2%
+[2026-10-06 08:04:23] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:04:26] [ERROR] TIMEOUT while waiting for transaction response id=tx_26984
+[2026-10-06 08:04:28] [ERROR] FAILED to resolve DNS for host internal-payment-api.cluster
+[2026-10-06 08:04:33] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:04:37] [INFO] CPU = 62.6% | RAM = 51.0% | DISK = 53.5%
+[2026-10-06 08:04:41] [WARNING] Latency detected on service order-engine: response time 980 ms
+[2026-10-06 08:04:46] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:04:50] [INFO] CPU = 39.6% | RAM = 40.4% | DISK = 73.1%
+[2026-10-06 08:04:53] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:04:54] [INFO] CPU = 30.4% | RAM = 64.3% | DISK = 72.7%
+[2026-10-06 08:04:59] [CRITICAL] DISK I/O queue saturated: DISK = 98.2% bandwidth utilized
+[2026-10-06 08:05:02] [INFO] CPU = 38.6% | RAM = 64.7% | DISK = 60.7%
+[2026-10-06 08:05:05] [INFO] CPU = 34.9% | RAM = 46.0% | DISK = 69.8%
+[2026-10-06 08:05:07] [INFO] CPU = 34.6% | RAM = 50.4% | DISK = 70.2%
+[2026-10-06 08:05:09] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:05:12] [ERROR] TIMEOUT while waiting for transaction response id=tx_19155
+[2026-10-06 08:05:15] [INFO] CPU = 37.6% | RAM = 47.5% | DISK = 73.1%
+[2026-10-06 08:05:17] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:05:18] [WARNING] Latency detected on service payment-api: response time 1348 ms
+[2026-10-06 08:05:23] [INFO] CPU = 45.0% | RAM = 44.3% | DISK = 58.0%
+[2026-10-06 08:05:28] [INFO] CPU = 30.8% | RAM = 62.1% | DISK = 56.6%
+[2026-10-06 08:05:32] [INFO] CPU = 61.5% | RAM = 52.9% | DISK = 73.0%
+[2026-10-06 08:05:35] [WARNING] RAM = 91.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:05:36] [WARNING] RAM = 88.8% exceeds warning threshold of 85.0%
+[2026-10-06 08:05:39] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:05:41] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.130
+[2026-10-06 08:05:44] [INFO] CPU = 42.6% | RAM = 46.4% | DISK = 54.5%
+[2026-10-06 08:05:47] [INFO] CPU = 64.3% | RAM = 41.6% | DISK = 59.7%
+[2026-10-06 08:05:49] [INFO] CPU = 43.0% | RAM = 63.3% | DISK = 61.6%
+[2026-10-06 08:05:52] [INFO] CPU = 37.5% | RAM = 58.4% | DISK = 57.5%
+[2026-10-06 08:05:57] [INFO] CPU = 36.6% | RAM = 59.1% | DISK = 67.8%
+[2026-10-06 08:06:02] [CRITICAL] DISK I/O queue saturated: DISK = 98.8% bandwidth utilized
+[2026-10-06 08:06:07] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:06:10] [INFO] CPU = 20.1% | RAM = 60.4% | DISK = 63.3%
+[2026-10-06 08:06:15] [INFO] CPU = 23.1% | RAM = 52.6% | DISK = 58.4%
+[2026-10-06 08:06:20] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:06:22] [INFO] CPU = 55.6% | RAM = 57.4% | DISK = 52.1%
+[2026-10-06 08:06:23] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:06:25] [INFO] CPU = 43.5% | RAM = 44.5% | DISK = 50.4%
+[2026-10-06 08:06:26] [INFO] CPU = 32.4% | RAM = 69.5% | DISK = 59.8%
+[2026-10-06 08:06:28] [INFO] CPU = 50.7% | RAM = 41.0% | DISK = 71.2%
+[2026-10-06 08:06:29] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
+[2026-10-06 08:06:31] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:06:36] [INFO] CPU = 56.4% | RAM = 49.7% | DISK = 54.5%
+[2026-10-06 08:06:39] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]
+[2026-10-06 08:06:43] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.242
+[2026-10-06 08:06:48] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:06:50] [INFO] CPU = 51.3% | RAM = 72.5% | DISK = 67.8%
+[2026-10-06 08:06:53] [CRITICAL] MEMORY pressure high: RAM = 95.7% - kernel OOM-killer alert
+[2026-10-06 08:06:57] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:07:01] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:07:06] [CRITICAL] MEMORY pressure high: RAM = 98.8% - kernel OOM-killer alert
+[2026-10-06 08:07:08] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:07:13] [INFO] CPU = 42.9% | RAM = 57.1% | DISK = 60.1%
+[2026-10-06 08:07:14] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.166
+[2026-10-06 08:07:18] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:07:23] [INFO] CPU = 62.8% | RAM = 41.4% | DISK = 74.0%
+[2026-10-06 08:07:26] [INFO] CPU = 51.2% | RAM = 73.1% | DISK = 57.5%
+[2026-10-06 08:07:31] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]
+[2026-10-06 08:07:32] [CRITICAL] DISK I/O queue saturated: DISK = 95.5% bandwidth utilized
+[2026-10-06 08:07:33] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:07:34] [WARNING] Latency detected on service order-engine: response time 763 ms
+[2026-10-06 08:07:37] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.245
+[2026-10-06 08:07:41] [INFO] CPU = 54.2% | RAM = 54.3% | DISK = 52.6%
+[2026-10-06 08:07:46] [ERROR] FAILED to resolve DNS for host internal-auth-gateway.cluster
+[2026-10-06 08:07:47] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:07:50] [INFO] CPU = 64.2% | RAM = 41.3% | DISK = 66.1%
+[2026-10-06 08:07:52] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:07:57] [ERROR] TIMEOUT while waiting for transaction response id=tx_24705
+[2026-10-06 08:07:59] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.235
+[2026-10-06 08:08:01] [WARNING] RAM = 85.4% exceeds warning threshold of 85.0%
+[2026-10-06 08:08:05] [ERROR] FAILED to resolve DNS for host internal-db-pool.cluster
+[2026-10-06 08:08:09] [WARNING] Latency detected on service auth-gateway: response time 1110 ms
+[2026-10-06 08:08:13] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:08:14] [INFO] CPU = 35.7% | RAM = 70.0% | DISK = 71.0%
+[2026-10-06 08:08:18] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:08:22] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:08:27] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:08:28] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:08:30] [INFO] CPU = 37.5% | RAM = 44.3% | DISK = 54.3%
+[2026-10-06 08:08:34] [CRITICAL] MEMORY pressure high: RAM = 95.4% - kernel OOM-killer alert
+[2026-10-06 08:08:38] [CRITICAL] CPU = 95.3% spike detected! Core thermal threshold reached
+[2026-10-06 08:08:41] [INFO] CPU = 39.9% | RAM = 55.0% | DISK = 52.9%
+[2026-10-06 08:08:44] [INFO] CPU = 24.0% | RAM = 48.6% | DISK = 53.9%
+[2026-10-06 08:08:45] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:08:50] [INFO] CPU = 64.5% | RAM = 58.6% | DISK = 66.5%
+[2026-10-06 08:08:52] [INFO] CPU = 54.4% | RAM = 71.6% | DISK = 70.7%
+[2026-10-06 08:08:53] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:08:58] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:09:02] [INFO] CPU = 23.9% | RAM = 48.8% | DISK = 69.5%
+[2026-10-06 08:09:03] [ERROR] FAILED to resolve DNS for host internal-order-engine.cluster
+[2026-10-06 08:09:05] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:09:09] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:09:10] [INFO] CPU = 51.8% | RAM = 41.4% | DISK = 74.3%
+[2026-10-06 08:09:13] [INFO] CPU = 32.0% | RAM = 61.7% | DISK = 50.8%
+[2026-10-06 08:09:15] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:09:20] [ERROR] TIMEOUT while waiting for transaction response id=tx_12700
+[2026-10-06 08:09:25] [INFO] CPU = 30.3% | RAM = 68.2% | DISK = 57.6%
+[2026-10-06 08:09:29] [ERROR] FAILED to resolve DNS for host internal-db-pool.cluster
+[2026-10-06 08:09:34] [INFO] CPU = 55.9% | RAM = 60.1% | DISK = 51.6%
+[2026-10-06 08:09:37] [ERROR] TIMEOUT while waiting for transaction response id=tx_24121
+[2026-10-06 08:09:42] [INFO] CPU = 22.8% | RAM = 70.2% | DISK = 74.1%
+[2026-10-06 08:09:47] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:09:50] [INFO] CPU = 23.5% | RAM = 61.4% | DISK = 64.4%
+[2026-10-06 08:09:54] [INFO] CPU = 40.3% | RAM = 66.2% | DISK = 74.6%
+[2026-10-06 08:09:59] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
+[2026-10-06 08:10:00] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 3/5]
+[2026-10-06 08:10:01] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.101
+[2026-10-06 08:10:02] [INFO] CPU = 55.4% | RAM = 72.5% | DISK = 74.6%
+[2026-10-06 08:10:07] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:10:08] [WARNING] Latency detected on service auth-gateway: response time 714 ms
+[2026-10-06 08:10:11] [INFO] CPU = 30.0% | RAM = 71.5% | DISK = 63.7%
+[2026-10-06 08:10:12] [INFO] CPU = 38.0% | RAM = 44.9% | DISK = 64.5%
+[2026-10-06 08:10:15] [INFO] CPU = 36.0% | RAM = 44.8% | DISK = 68.2%
+[2026-10-06 08:10:17] [ERROR] FAILED to resolve DNS for host internal-auth-gateway.cluster
+[2026-10-06 08:10:18] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:10:22] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.219
+[2026-10-06 08:10:23] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.58
+[2026-10-06 08:10:26] [INFO] CPU = 42.5% | RAM = 51.1% | DISK = 63.0%
+[2026-10-06 08:10:30] [INFO] CPU = 45.4% | RAM = 51.7% | DISK = 57.0%
+[2026-10-06 08:10:34] [ERROR] TIMEOUT while waiting for transaction response id=tx_27566
+[2026-10-06 08:10:37] [ERROR] TIMEOUT while waiting for transaction response id=tx_39979
+[2026-10-06 08:10:42] [WARNING] Latency detected on service order-engine: response time 1202 ms
+[2026-10-06 08:10:46] [INFO] CPU = 37.4% | RAM = 74.8% | DISK = 65.7%
+[2026-10-06 08:10:47] [INFO] CPU = 38.2% | RAM = 65.0% | DISK = 60.0%
+[2026-10-06 08:10:52] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:10:57] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:11:02] [ERROR] TIMEOUT while waiting for transaction response id=tx_27291
+[2026-10-06 08:11:05] [WARNING] Latency detected on service auth-gateway: response time 949 ms
+[2026-10-06 08:11:07] [CRITICAL] CPU = 94.9% spike detected! Core thermal threshold reached
+[2026-10-06 08:11:09] [INFO] CPU = 56.6% | RAM = 55.5% | DISK = 68.1%
+[2026-10-06 08:11:13] [INFO] CPU = 58.5% | RAM = 56.2% | DISK = 59.3%
+[2026-10-06 08:11:16] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:11:18] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:11:21] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:11:23] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.58
+[2026-10-06 08:11:27] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:11:28] [INFO] CPU = 33.7% | RAM = 67.5% | DISK = 63.9%
+[2026-10-06 08:11:31] [INFO] CPU = 64.0% | RAM = 64.1% | DISK = 63.1%
+[2026-10-06 08:11:36] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:11:39] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:11:43] [INFO] CPU = 43.0% | RAM = 43.3% | DISK = 72.0%
+[2026-10-06 08:11:47] [INFO] CPU = 31.6% | RAM = 59.5% | DISK = 74.6%
+[2026-10-06 08:11:50] [WARNING] Latency detected on service order-engine: response time 617 ms
+[2026-10-06 08:11:54] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:11:57] [INFO] CPU = 22.2% | RAM = 70.9% | DISK = 63.6%
+[2026-10-06 08:12:02] [CRITICAL] MEMORY pressure high: RAM = 98.3% - kernel OOM-killer alert
+[2026-10-06 08:12:07] [CRITICAL] DISK I/O queue saturated: DISK = 93.5% bandwidth utilized
+[2026-10-06 08:12:09] [INFO] CPU = 41.0% | RAM = 40.1% | DISK = 64.9%
+[2026-10-06 08:12:11] [INFO] CPU = 20.0% | RAM = 49.3% | DISK = 55.2%
+[2026-10-06 08:12:13] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:12:14] [INFO] CPU = 62.1% | RAM = 62.6% | DISK = 53.6%
+[2026-10-06 08:12:18] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 2/5]
+[2026-10-06 08:12:22] [INFO] CPU = 63.2% | RAM = 57.7% | DISK = 74.9%
+[2026-10-06 08:12:27] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:12:31] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:12:35] [INFO] CPU = 27.7% | RAM = 41.6% | DISK = 57.1%
+[2026-10-06 08:12:36] [INFO] CPU = 51.2% | RAM = 65.5% | DISK = 55.6%
+[2026-10-06 08:12:37] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:12:41] [WARNING] RAM = 86.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:12:46] [INFO] CPU = 43.6% | RAM = 56.1% | DISK = 72.8%
+[2026-10-06 08:12:51] [INFO] CPU = 22.2% | RAM = 57.2% | DISK = 60.5%
+[2026-10-06 08:12:52] [INFO] CPU = 45.3% | RAM = 40.3% | DISK = 53.1%
+[2026-10-06 08:12:53] [CRITICAL] CPU = 99.8% spike detected! Core thermal threshold reached
+[2026-10-06 08:12:57] [INFO] CPU = 63.1% | RAM = 48.4% | DISK = 74.4%
+[2026-10-06 08:12:59] [INFO] CPU = 43.4% | RAM = 40.0% | DISK = 65.2%
+[2026-10-06 08:13:03] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:13:04] [INFO] CPU = 38.0% | RAM = 55.5% | DISK = 72.7%
+[2026-10-06 08:13:07] [INFO] CPU = 57.0% | RAM = 61.0% | DISK = 54.1%
+[2026-10-06 08:13:12] [INFO] CPU = 26.3% | RAM = 68.7% | DISK = 63.6%
+[2026-10-06 08:13:14] [ERROR] TIMEOUT while waiting for transaction response id=tx_14951
+[2026-10-06 08:13:16] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:13:18] [WARNING] RAM = 89.7% exceeds warning threshold of 85.0%
+[2026-10-06 08:13:23] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.20
+[2026-10-06 08:13:25] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:13:29] [INFO] CPU = 40.7% | RAM = 57.0% | DISK = 58.8%
+[2026-10-06 08:13:33] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:13:38] [INFO] CPU = 29.0% | RAM = 45.3% | DISK = 74.4%
+[2026-10-06 08:13:41] [INFO] CPU = 56.5% | RAM = 55.5% | DISK = 65.8%
+[2026-10-06 08:13:45] [ERROR] TIMEOUT while waiting for transaction response id=tx_16368
+[2026-10-06 08:13:46] [INFO] CPU = 33.9% | RAM = 46.2% | DISK = 59.9%
+[2026-10-06 08:13:47] [CRITICAL] DISK I/O queue saturated: DISK = 97.5% bandwidth utilized
+[2026-10-06 08:13:52] [INFO] CPU = 39.8% | RAM = 67.7% | DISK = 71.7%
+[2026-10-06 08:13:57] [INFO] CPU = 21.4% | RAM = 65.3% | DISK = 62.6%
+[2026-10-06 08:14:00] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:14:04] [INFO] CPU = 44.7% | RAM = 70.8% | DISK = 62.5%
+[2026-10-06 08:14:07] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:14:11] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:14:13] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:14:15] [INFO] CPU = 59.8% | RAM = 55.5% | DISK = 52.7%
+[2026-10-06 08:14:17] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
+[2026-10-06 08:14:20] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:14:25] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:14:29] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:14:33] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:14:34] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:14:39] [INFO] CPU = 46.4% | RAM = 51.4% | DISK = 64.6%
+[2026-10-06 08:14:43] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:14:47] [INFO] CPU = 42.6% | RAM = 70.2% | DISK = 63.6%
+[2026-10-06 08:14:52] [INFO] CPU = 50.1% | RAM = 41.6% | DISK = 59.2%
+[2026-10-06 08:14:56] [INFO] CPU = 54.3% | RAM = 45.2% | DISK = 71.0%
+[2026-10-06 08:14:58] [INFO] CPU = 33.0% | RAM = 69.0% | DISK = 59.6%
+[2026-10-06 08:14:59] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:15:02] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:15:05] [INFO] CPU = 34.1% | RAM = 52.6% | DISK = 66.8%
+[2026-10-06 08:15:10] [WARNING] RAM = 86.0% exceeds warning threshold of 85.0%
+[2026-10-06 08:15:14] [INFO] CPU = 33.8% | RAM = 50.4% | DISK = 51.2%
+[2026-10-06 08:15:17] [INFO] CPU = 63.2% | RAM = 70.3% | DISK = 61.3%
+[2026-10-06 08:15:19] [INFO] CPU = 60.8% | RAM = 55.2% | DISK = 68.7%
+[2026-10-06 08:15:24] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.91
+[2026-10-06 08:15:27] [INFO] CPU = 26.1% | RAM = 64.6% | DISK = 65.9%
+[2026-10-06 08:15:29] [ERROR] TIMEOUT while waiting for transaction response id=tx_40538
+[2026-10-06 08:15:31] [INFO] CPU = 41.0% | RAM = 47.3% | DISK = 54.2%
+[2026-10-06 08:15:32] [INFO] CPU = 36.0% | RAM = 69.3% | DISK = 53.2%
+[2026-10-06 08:15:37] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:15:39] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:15:44] [WARNING] RAM = 85.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:15:48] [CRITICAL] DISK I/O queue saturated: DISK = 98.0% bandwidth utilized
+[2026-10-06 08:15:53] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:15:57] [ERROR] FAILED to resolve DNS for host internal-payment-api.cluster
+[2026-10-06 08:16:01] [INFO] CPU = 44.2% | RAM = 53.1% | DISK = 67.6%
+[2026-10-06 08:16:04] [ERROR] TIMEOUT while waiting for transaction response id=tx_15446
+[2026-10-06 08:16:08] [INFO] CPU = 44.8% | RAM = 66.9% | DISK = 51.5%
+[2026-10-06 08:16:09] [CRITICAL] DISK I/O queue saturated: DISK = 93.2% bandwidth utilized
+[2026-10-06 08:16:13] [INFO] CPU = 47.9% | RAM = 72.3% | DISK = 74.6%
+[2026-10-06 08:16:14] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:16:18] [INFO] CPU = 46.8% | RAM = 43.1% | DISK = 58.8%
+[2026-10-06 08:16:23] [INFO] CPU = 38.9% | RAM = 43.7% | DISK = 66.4%
+[2026-10-06 08:16:26] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:16:29] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:16:30] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:16:33] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:16:38] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.35
+[2026-10-06 08:16:41] [WARNING] Latency detected on service db-pool: response time 1045 ms
+[2026-10-06 08:16:46] [INFO] CPU = 55.6% | RAM = 40.8% | DISK = 71.9%
+[2026-10-06 08:16:49] [INFO] CPU = 57.5% | RAM = 48.6% | DISK = 58.0%
+[2026-10-06 08:16:54] [WARNING] RAM = 91.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:16:57] [INFO] CPU = 35.8% | RAM = 67.4% | DISK = 62.0%
+[2026-10-06 08:17:00] [INFO] CPU = 49.5% | RAM = 73.3% | DISK = 50.8%
+[2026-10-06 08:17:03] [INFO] CPU = 34.8% | RAM = 45.2% | DISK = 67.3%
+[2026-10-06 08:17:08] [WARNING] Latency detected on service cache-cluster: response time 764 ms
+[2026-10-06 08:17:11] [INFO] CPU = 61.5% | RAM = 74.0% | DISK = 72.9%
+[2026-10-06 08:17:15] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:17:18] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 3/5]
+[2026-10-06 08:17:23] [INFO] CPU = 22.9% | RAM = 45.4% | DISK = 67.1%
+[2026-10-06 08:17:26] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:17:30] [INFO] CPU = 31.8% | RAM = 52.5% | DISK = 71.1%
+[2026-10-06 08:17:35] [INFO] CPU = 26.4% | RAM = 71.3% | DISK = 57.9%
+[2026-10-06 08:17:39] [WARNING] Latency detected on service cache-cluster: response time 1080 ms
+[2026-10-06 08:17:40] [INFO] CPU = 39.2% | RAM = 57.7% | DISK = 72.2%
+[2026-10-06 08:17:45] [ERROR] TIMEOUT while waiting for transaction response id=tx_13947
+[2026-10-06 08:17:49] [CRITICAL] DISK I/O queue saturated: DISK = 95.2% bandwidth utilized
+[2026-10-06 08:17:53] [INFO] CPU = 53.4% | RAM = 51.3% | DISK = 51.4%
+[2026-10-06 08:17:57] [WARNING] RAM = 91.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:18:02] [WARNING] RAM = 91.3% exceeds warning threshold of 85.0%
+[2026-10-06 08:18:06] [WARNING] RAM = 85.6% exceeds warning threshold of 85.0%
+[2026-10-06 08:18:08] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:18:12] [INFO] CPU = 23.7% | RAM = 61.8% | DISK = 57.1%
+[2026-10-06 08:18:13] [WARNING] Latency detected on service auth-gateway: response time 831 ms
+[2026-10-06 08:18:16] [INFO] CPU = 39.4% | RAM = 60.8% | DISK = 71.0%
+[2026-10-06 08:18:18] [INFO] CPU = 39.9% | RAM = 63.8% | DISK = 68.8%
+[2026-10-06 08:18:23] [INFO] CPU = 63.9% | RAM = 49.1% | DISK = 65.1%
+[2026-10-06 08:18:26] [INFO] CPU = 26.3% | RAM = 47.5% | DISK = 60.0%
+[2026-10-06 08:18:29] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
+[2026-10-06 08:18:31] [INFO] CPU = 29.9% | RAM = 68.1% | DISK = 64.2%
+[2026-10-06 08:18:36] [INFO] CPU = 51.5% | RAM = 71.0% | DISK = 51.5%
+[2026-10-06 08:18:39] [INFO] CPU = 42.2% | RAM = 67.7% | DISK = 65.0%
+[2026-10-06 08:18:42] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:18:45] [SUCCESS] User operator LOGIN successful. Session token granted.
+[2026-10-06 08:18:50] [INFO] CPU = 42.6% | RAM = 54.5% | DISK = 51.4%
+[2026-10-06 08:18:51] [INFO] CPU = 29.1% | RAM = 67.1% | DISK = 61.0%
+[2026-10-06 08:18:53] [INFO] CPU = 51.6% | RAM = 53.4% | DISK = 65.3%
+[2026-10-06 08:18:55] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:19:00] [INFO] CPU = 21.1% | RAM = 45.7% | DISK = 70.2%
+[2026-10-06 08:19:04] [ERROR] FAILED to resolve DNS for host internal-event-bus.cluster
+[2026-10-06 08:19:05] [WARNING] RAM = 88.8% exceeds warning threshold of 85.0%
+[2026-10-06 08:19:09] [INFO] CPU = 59.1% | RAM = 48.7% | DISK = 62.0%
+[2026-10-06 08:19:13] [WARNING] Latency detected on service payment-api: response time 531 ms
+[2026-10-06 08:19:18] [WARNING] Latency detected on service event-bus: response time 579 ms
+[2026-10-06 08:19:19] [INFO] CPU = 29.7% | RAM = 59.4% | DISK = 61.2%
+[2026-10-06 08:19:21] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:19:23] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:19:24] [INFO] CPU = 39.5% | RAM = 59.7% | DISK = 71.9%
+[2026-10-06 08:19:27] [INFO] CPU = 40.3% | RAM = 40.8% | DISK = 66.9%
+[2026-10-06 08:19:30] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:19:34] [INFO] CPU = 52.3% | RAM = 52.1% | DISK = 65.1%
+[2026-10-06 08:19:39] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:19:44] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:19:47] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:19:50] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:19:52] [INFO] CPU = 27.2% | RAM = 70.0% | DISK = 57.1%
+[2026-10-06 08:19:53] [INFO] CPU = 43.2% | RAM = 43.6% | DISK = 73.0%
+[2026-10-06 08:19:56] [INFO] CPU = 45.1% | RAM = 53.0% | DISK = 58.0%
+[2026-10-06 08:20:00] [WARNING] RAM = 90.3% exceeds warning threshold of 85.0%
+[2026-10-06 08:20:02] [INFO] CPU = 56.5% | RAM = 59.9% | DISK = 61.3%
+[2026-10-06 08:20:07] [INFO] CPU = 45.4% | RAM = 40.7% | DISK = 70.5%
+[2026-10-06 08:20:11] [INFO] CPU = 42.6% | RAM = 61.7% | DISK = 61.6%
+[2026-10-06 08:20:13] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:20:14] [WARNING] RAM = 85.9% exceeds warning threshold of 85.0%
+[2026-10-06 08:20:18] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:20:21] [CRITICAL] DISK I/O queue saturated: DISK = 96.1% bandwidth utilized
+[2026-10-06 08:20:23] [ERROR] TIMEOUT while waiting for transaction response id=tx_15219
+[2026-10-06 08:20:26] [INFO] CPU = 46.4% | RAM = 47.3% | DISK = 63.2%
+[2026-10-06 08:20:27] [CRITICAL] DISK I/O queue saturated: DISK = 96.6% bandwidth utilized
+[2026-10-06 08:20:32] [INFO] CPU = 58.9% | RAM = 55.5% | DISK = 67.9%
+[2026-10-06 08:20:34] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:20:35] [INFO] CPU = 49.4% | RAM = 40.3% | DISK = 64.5%
+[2026-10-06 08:20:37] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:20:38] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:20:39] [ERROR] TIMEOUT while waiting for transaction response id=tx_17097
+[2026-10-06 08:20:42] [ERROR] TIMEOUT while waiting for transaction response id=tx_37793
+[2026-10-06 08:20:44] [INFO] CPU = 36.5% | RAM = 51.5% | DISK = 66.6%
+[2026-10-06 08:20:45] [INFO] CPU = 60.4% | RAM = 47.9% | DISK = 72.9%
+[2026-10-06 08:20:49] [INFO] CPU = 28.1% | RAM = 58.4% | DISK = 74.5%
+[2026-10-06 08:20:50] [INFO] CPU = 35.6% | RAM = 46.2% | DISK = 66.3%
+[2026-10-06 08:20:51] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:20:56] [SUCCESS] User admin LOGIN successful. Session token granted.
+[2026-10-06 08:20:59] [CRITICAL] MEMORY pressure high: RAM = 93.5% - kernel OOM-killer alert
+[2026-10-06 08:21:01] [INFO] CPU = 62.7% | RAM = 45.2% | DISK = 54.4%
+[2026-10-06 08:21:02] [ERROR] TIMEOUT while waiting for transaction response id=tx_15226
+[2026-10-06 08:21:04] [INFO] CPU = 44.3% | RAM = 65.1% | DISK = 54.0%
+[2026-10-06 08:21:08] [INFO] CPU = 63.9% | RAM = 70.2% | DISK = 70.8%
+[2026-10-06 08:21:09] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:21:10] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:21:15] [ERROR] TIMEOUT while waiting for transaction response id=tx_25105
+[2026-10-06 08:21:18] [WARNING] RAM = 90.3% exceeds warning threshold of 85.0%
+[2026-10-06 08:21:19] [INFO] CPU = 47.8% | RAM = 49.3% | DISK = 65.2%
+[2026-10-06 08:21:22] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 4/5]
+[2026-10-06 08:21:25] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:21:27] [INFO] CPU = 25.1% | RAM = 44.0% | DISK = 67.9%
+[2026-10-06 08:21:28] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:21:30] [SUCCESS] User guest LOGIN successful. Session token granted.
+[2026-10-06 08:21:34] [INFO] CPU = 57.2% | RAM = 55.4% | DISK = 56.7%
+[2026-10-06 08:21:38] [INFO] CPU = 22.2% | RAM = 64.5% | DISK = 73.7%
+[2026-10-06 08:21:43] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:21:48] [CRITICAL] CPU = 93.9% spike detected! Core thermal threshold reached
+[2026-10-06 08:21:50] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:21:55] [INFO] CPU = 26.0% | RAM = 71.1% | DISK = 58.3%
+[2026-10-06 08:21:56] [WARNING] Latency detected on service cache-cluster: response time 860 ms
+[2026-10-06 08:21:57] [ERROR] FAILED to resolve DNS for host internal-db-pool.cluster
+[2026-10-06 08:22:02] [INFO] CPU = 56.9% | RAM = 57.2% | DISK = 55.7%
+[2026-10-06 08:22:06] [INFO] CPU = 57.4% | RAM = 70.4% | DISK = 65.6%
+[2026-10-06 08:22:07] [INFO] CPU = 48.5% | RAM = 47.3% | DISK = 72.5%
+[2026-10-06 08:22:11] [INFO] CPU = 34.2% | RAM = 62.7% | DISK = 55.6%
+[2026-10-06 08:22:13] [CRITICAL] MEMORY pressure high: RAM = 96.9% - kernel OOM-killer alert
+[2026-10-06 08:22:16] [ERROR] TIMEOUT while waiting for transaction response id=tx_28274
+[2026-10-06 08:22:20] [WARNING] RAM = 88.1% exceeds warning threshold of 85.0%
+[2026-10-06 08:22:22] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:22:23] [CRITICAL] MEMORY pressure high: RAM = 98.9% - kernel OOM-killer alert
+[2026-10-06 08:22:27] [WARNING] Latency detected on service payment-api: response time 813 ms
+[2026-10-06 08:22:32] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:22:33] [INFO] CPU = 38.3% | RAM = 40.9% | DISK = 73.3%
+[2026-10-06 08:22:38] [INFO] CPU = 31.8% | RAM = 49.7% | DISK = 62.7%
+[2026-10-06 08:22:42] [INFO] CPU = 24.0% | RAM = 71.3% | DISK = 53.0%
+[2026-10-06 08:22:45] [INFO] CPU = 36.1% | RAM = 50.6% | DISK = 67.6%
+[2026-10-06 08:22:47] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]
+[2026-10-06 08:22:49] [INFO] CPU = 55.8% | RAM = 62.1% | DISK = 60.1%
+[2026-10-06 08:22:52] [INFO] CPU = 51.8% | RAM = 46.7% | DISK = 51.7%
+[2026-10-06 08:22:56] [INFO] CPU = 52.1% | RAM = 51.9% | DISK = 53.9%
+[2026-10-06 08:22:58] [ERROR] TIMEOUT while waiting for transaction response id=tx_37265
+[2026-10-06 08:23:00] [INFO] CPU = 46.4% | RAM = 55.3% | DISK = 62.6%
+[2026-10-06 08:23:05] [INFO] CPU = 38.7% | RAM = 48.9% | DISK = 55.1%
+[2026-10-06 08:23:09] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:23:12] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:23:13] [SUCCESS] User db_worker LOGIN successful. Session token granted.
+[2026-10-06 08:23:16] [INFO] CPU = 52.4% | RAM = 43.4% | DISK = 56.5%
+[2026-10-06 08:23:21] [WARNING] Latency detected on service event-bus: response time 573 ms
+[2026-10-06 08:23:23] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]
+[2026-10-06 08:23:27] [SUCCESS] User analytics_svc LOGIN successful. Session token granted.
+[2026-10-06 08:23:31] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 3/5]
+[2026-10-06 08:23:35] [INFO] CPU = 46.0% | RAM = 57.1% | DISK = 74.1%
+[2026-10-06 08:23:40] [INFO] CPU = 34.3% | RAM = 64.8% | DISK = 74.2%
+[2026-10-06 08:23:42] [ERROR] TIMEOUT while waiting for transaction response id=tx_31976
+[2026-10-06 08:23:47] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 5/5]
+[2026-10-06 08:23:51] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:23:55] [WARNING] RAM = 85.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:23:57] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:23:58] [INFO] CPU = 32.5% | RAM = 63.0% | DISK = 71.3%
+[2026-10-06 08:24:02] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:24:04] [WARNING] RAM = 87.3% exceeds warning threshold of 85.0%
+[2026-10-06 08:24:07] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:24:10] [INFO] CPU = 32.5% | RAM = 48.7% | DISK = 63.2%
+[2026-10-06 08:24:13] [INFO] CPU = 31.8% | RAM = 65.9% | DISK = 66.5%
+[2026-10-06 08:24:18] [ERROR] FAILED to resolve DNS for host internal-auth-gateway.cluster
+[2026-10-06 08:24:20] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.55
+[2026-10-06 08:24:24] [ERROR] TIMEOUT while waiting for transaction response id=tx_24292
+[2026-10-06 08:24:26] [INFO] CPU = 24.4% | RAM = 58.6% | DISK = 56.5%
+[2026-10-06 08:24:31] [INFO] CPU = 26.0% | RAM = 53.5% | DISK = 60.6%
+[2026-10-06 08:24:35] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:24:40] [ERROR] FAILED to resolve DNS for host internal-auth-gateway.cluster
+[2026-10-06 08:24:44] [WARNING] RAM = 85.2% exceeds warning threshold of 85.0%
+[2026-10-06 08:24:47] [INFO] CPU = 32.1% | RAM = 65.0% | DISK = 64.1%
+[2026-10-06 08:24:51] [WARNING] Worker thread pool utilization reached 84%
+[2026-10-06 08:24:54] [INFO] CPU = 29.9% | RAM = 50.9% | DISK = 71.5%
+[2026-10-06 08:24:55] [ERROR] User guest LOGIN FAILED - brute force threshold triggered from IP 198.51.100.110
+[2026-10-06 08:25:00] [SUCCESS] User root LOGIN successful. Session token granted.
+[2026-10-06 08:25:03] [ERROR] TIMEOUT while waiting for transaction response id=tx_14431
+[2026-10-06 08:25:06] [INFO] CPU = 24.5% | RAM = 73.0% | DISK = 56.7%
+[2026-10-06 08:25:09] [INFO] CPU = 64.4% | RAM = 54.3% | DISK = 50.9%
+[2026-10-06 08:25:13] [INFO] CPU = 48.4% | RAM = 54.7% | DISK = 60.5%
+[2026-10-06 08:25:15] [INFO] CPU = 21.3% | RAM = 65.8% | DISK = 67.5%
+[2026-10-06 08:25:18] [INFO] CPU = 60.8% | RAM = 53.0% | DISK = 52.9%
+[2026-10-06 08:25:21] [INFO] CPU = 30.1% | RAM = 68.6% | DISK = 61.6%
+[2026-10-06 08:25:24] [ERROR] FAILED to resolve DNS for host internal-auth-gateway.cluster
+[2026-10-06 08:25:26] [ERROR] FAILED background sync job: out of socket descriptors
+[2026-10-06 08:25:28] [CRITICAL] DISK I/O queue saturated: DISK = 93.7% bandwidth utilized
+[2026-10-06 08:25:30] [INFO] CPU = 63.3% | RAM = 52.5% | DISK = 73.2%
+[2026-10-06 08:25:33] [CRITICAL] Cluster partition detected: node unreachable during quorum vote
+[2026-10-06 08:25:38] [WARNING] User guest LOGIN FAILED - invalid credentials [Attempt 1/5]

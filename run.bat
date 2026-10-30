@@ -5,3 +5,4 @@ if not exist intelliguard.exe (
     if errorlevel 1 exit /b 1
 )
 intelliguard.exe
+
